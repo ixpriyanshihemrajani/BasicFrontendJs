@@ -44,8 +44,13 @@ body {
     color: #fff;
     border: none;
     border-radius: 4px;
+    cursor: pointer;
     
 }
+
+#add-task button:hover {
+    background-color: hsl(250, 53%, 23%);
+  }
 
 #task-list {
     list-style: none;
@@ -77,7 +82,7 @@ body {
     cursor: pointer;
   }
   
-  /* Darker background on mouse-over */
+
   .btn:hover {
     background-color: #7ab6f6;
   }
