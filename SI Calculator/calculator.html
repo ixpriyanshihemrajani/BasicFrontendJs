@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Interest Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div>
+        <h1>Simple Interest Calculator</h1>
+        <div> 
+            <form >
+            <label>Principal Amount: </label>
+            <input type="textbox" name="amount" placeholder="eg: 20000Rs" id="amount">
+            <span id="numloc"></span><br>
+            <label>Interest Rate: </label>
+            <input type="textbox" name="rate" placeholder="eg: 12%" id="rate"><br>
+            <label>Time Period: </label>
+            <input type="textbox" name="time" placeholder="eg: 4yrs" id="time">
+            <select id="duration" name="duration">
+                <option value="Year">Year</option>
+                <option value="Month">Month</option>
+            </select><br>
+            <button id="calculateBtn">Calculate</button>
+            <button type="reset" value="submit">Clear</button>
+        </form>
+        <div id="result"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
