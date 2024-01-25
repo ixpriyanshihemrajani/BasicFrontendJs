@@ -1,33 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Simple Interest Calculator</title>
+    
     <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-    <div>
+  </head>
+  <body>
+    <div class="container">
         <h1>Simple Interest Calculator</h1>
-        <div> 
-            <form >
-            <label>Principal Amount: </label>
-            <input type="textbox" name="amount" placeholder="eg: 20000Rs" id="amount">
-            <span id="numloc"></span><br>
-            <label>Interest Rate: </label>
-            <input type="textbox" name="rate" placeholder="eg: 12%" id="rate"><br>
-            <label>Time Period: </label>
-            <input type="textbox" name="time" placeholder="eg: 4yrs" id="time">
-            <select id="duration" name="duration">
-                <option value="Year">Year</option>
-                <option value="Month">Month</option>
-            </select><br>
-            <button id="calculateBtn">Calculate</button>
-            <button type="reset" value="submit">Clear</button>
-        </form>
-        <div id="result"></div>
+      <div class="input-wrapper">
+        <div class="wrapper">
+          <label for="principal">Principal:</label>
+          <input type="textbox" id="principal" placeholder="10000" />
         </div>
+        <div class="wrapper">
+          <label for="rate">Rate:</label>
+          <input type="textbox" id="rate" placeholder="5" />
+        </div>
+      </div>
+      <label for="time">Time:</label>
+      <div class="time-wrapper">
+        <input type="textbox" id="time" placeholder="3" />
+        <select name="duration" id="duration">
+          <option value="year">Year</option>
+          <option value="month">Month</option>
+        </select>
+      </div>
+      <button id="calculate-btn">Calculate</button>
+      <div id="result"></div>
     </div>
+    
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
