@@ -1,0 +1,50 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+}
+ 
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+ 
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+ 
+.card {
+    width: 200px;
+    margin: 10px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+ 
+.pagination-container {
+    display: flex;
+    overflow-x: auto;
+    margin-top: 20px;
+    padding: 10px 0;
+}
+ 
+.pagination-button {
+    margin: 0 5px;
+    padding: 8px 12px;
+    background-color: #f3f7fb;
+    border: none;
+    border-radius: 5px;
+    
+}
+ 
+.pagination-button:hover {
+    background-color: #7b7c7f;
+}
